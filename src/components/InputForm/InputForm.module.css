@@ -1,3 +1,12 @@
+.form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: -1.5rem;
+    width: 100%;
+}
+
 .input {
     display: flex;
     height: 3.375rem;
@@ -11,10 +20,7 @@
 
     padding: 1rem;
     border-radius: 0.5rem;
-    opacity: 100%;
 
-    margin-left: 27rem;
-    margin-top: -1.5rem;
 }   
 
 .input::placeholder{
