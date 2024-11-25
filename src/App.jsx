@@ -1,14 +1,18 @@
-import { Header } from './components/Header';
-import { InputForm } from './components/InputForm';
-import { ButtonRemove } from './components/ButtonRemove';
-import './global.css'
+import { Header } from "./components/Header";
+import { InputForm } from "./components/InputForm";
+import { TaskCard } from "./components/TaskCard";
+
+import "./global.css";
+import styles from "./App.module.css";
 
 export function App() {
   return (
     <>
-    <Header />
-    <InputForm />
-    <ButtonRemove />
+      <Header />
+      <div className={styles.wrapper}>
+        <InputForm />
+        <TaskCard />
+      </div>
     </>
   );
 }
