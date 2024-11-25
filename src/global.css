@@ -24,8 +24,16 @@
 
 body {
   background: var(--gray-500);
-  font-family: "Inter", sans-serif;
   color: var(--gray-100);
   --webkit-font-smoothing: antialiased;
-  line-height: 140%;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: "Inter", sans-serif;
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 1rem;
 }
