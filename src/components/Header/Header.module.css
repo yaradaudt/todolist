@@ -3,9 +3,8 @@
     justify-content: center;
     background-color: var(--gray-700);
     height: 12.5rem;
+}
 
-    img {
-        width: 7.9rem;
-    }
-
+.header img {
+    width: 7.9rem;
 }
