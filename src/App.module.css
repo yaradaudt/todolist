@@ -5,3 +5,53 @@
     flex-direction: column;
     gap: 64px;
 }
+
+.headerTasks {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+.currentTasks {
+    color: var(--blue-400);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.completedTasks {
+    color: var(--purple-400);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.tasksList {
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.clipboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 1rem;
+}
+
+.clipboard img {
+    width: 3.5rem;
+}
+
+.tasksNotes {
+    color: var(--gray-300);
+    text-align: center;
+}
+
+.tasksNotes h3 {
+    font-weight: 700;
+}
+
+.tasksNotes p {
+    font-weight: 400;
+}

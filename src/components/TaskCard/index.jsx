@@ -1,18 +1,36 @@
 import styles from "./TaskCard.module.css";
 import { TbTrash } from "react-icons/tb";
 
-export function TaskCard() {
+export function TaskCard({ task, toggleTaskCompletion, deleteTask }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.taskCard}>
       <div className={styles.checkbox}>
-        <input className={styles.inputCheckbox} type="checkbox" />
-        <span className={styles.checkboxSpan}></span>
+        <input
+          className={styles.inputCheckbox}
+          type="checkbox"
+          checked={task.isCompleted}
+          onChange={() => {
+            console.log("Checkbox clicked:", task.id)
+            toggleTaskCompletion(task.id)
+          }}
+          />
+        <span
+          className={`${styles.checkboxSpan}
+        ${task.isCompleted ? styles.checked : ""}`}
+        ></span>
       </div>
-      <p>
-        Integer urna interdum massa libero auctor neque turpis turpis semper.
-        Duis vel sed fames integer.
+      <p
+        className={`${styles.taskText} ${
+          task.isCompleted ? styles.taskTextCompleted : ""
+        }`}
+      >
+        {task.text}
       </p>
-      <button className={styles.buttonRemove}>
+
+      <button
+        className={styles.buttonRemove}
+        onClick={() => deleteTask(task.id)}
+      >
         <TbTrash />
       </button>
     </div>

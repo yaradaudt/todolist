@@ -1,19 +1,36 @@
-.container {
+.taskCard {
     display: flex;
     align-items: center;
-    width: 100%;
-    gap: 0.875rem;
-
-    height: 4.5rem;
-    padding: 1rem;
+    justify-content: space-between;
+    
     background: var(--gray-500);
 
-    border-radius: 0.5rem;
+    width: 100%;
+    height: 4.5rem;
+    padding: 1rem;
+    margin-bottom: 0.875rem;
+    border-radius: 8px;
+}
+
+.taskText {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.taskTextCompleted {
+  text-decoration: line-through;
+  color: var(--gray-300);
 }
 
 .inputCheckbox {
-  width: 0;
-  height: 0;
+  width: 1;
+  height: 1;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.checkbox {
   display: flex;
   align-items: center;
 }
@@ -24,7 +41,15 @@
   height: 1rem;
   border-radius: 50%;
   border: 1px solid var(--blue-400);
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
 }
+
+.checked {
+  background: var(--purple-700);
+  border-color: var(--purple-700);
+}
+
 
 .buttonRemove {
     display: flex;
