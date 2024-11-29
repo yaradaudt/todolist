@@ -4,7 +4,7 @@
 
 Um gerenciador de tarefas simples e intuitivo para organizar suas atividades diárias. Aplicação conta com versão desktop e mobile.
 
-> 🚀 **Tecnologias principais:** Typescript e CSS modules
+> 🚀 **Tecnologias principais:** React.js e CSS modules
 
 ---
 
@@ -26,8 +26,6 @@ Este projeto utiliza as seguintes tecnologias e bibliotecas:
 
 - **React.js**  
 
-- **Typescript**
-
 - **CSS modules**  
 
 - **React Icons**  
@@ -36,7 +34,7 @@ Este projeto utiliza as seguintes tecnologias e bibliotecas:
 
 ## 🚀 Como utilizar
 
-A aplicação está disponível aqui: [ToDo APP](https://). 
+A aplicação está disponível aqui: [ToDo APP](https://todolist-ebon-two.vercel.app/). 
 
 ### Passos para rodar localmente:
 
