@@ -6,6 +6,19 @@
     gap: 64px;
 }
 
+@media(max-width: 768px) {
+    .wrapper {
+        width: 500px;
+    }
+}
+
+@media(max-width: 500px) {
+    .wrapper {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
 .headerTasks {
     display: flex;
     justify-content: space-between;
