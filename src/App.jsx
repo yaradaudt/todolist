@@ -40,6 +40,8 @@ export function App() {
     setTasks(tasks.filter((task) => task.id !== taskId));
   }
 
+  const completedTasks = tasks.filter((task) => task.isCompleted).length;
+
   return (
     <>
       <Header />
@@ -52,11 +54,16 @@ export function App() {
         <div className={styles.tasksArea}>
           <div className={styles.headerTasks}>
             <p className={styles.currentTasks}>
-              Tarefas criadas {tasks.length}{" "}
+              Tarefas criadas 
+            <span className={styles.badge}>
+              {tasks.length}
+            </span>
             </p>
             <p className={styles.completedTasks}>
-              Concluídas: {tasks.filter((task) => task.isCompleted).length} de{" "}
-              {tasks.length}
+              Concluídas
+              <span className={styles.badge}>
+                {completedTasks} de {tasks.length}
+              </span>
             </p>
           </div>
           <div className={styles.tasksList}>
